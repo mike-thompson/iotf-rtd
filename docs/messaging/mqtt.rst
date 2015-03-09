@@ -3,7 +3,7 @@ MQTT
 ===============================================================================
 
 The primary mechanism that devices and applications use to communicate
-with the IBM Internet of Things Foundation is MQTT; this is a protocol
+with the IBM Internet of Things Foundation is MQTT which is a protocol
 designed for the efficient exchange of real-time data with sensor and
 mobile devices.
 
@@ -75,7 +75,7 @@ in pem format.  The following file contains the entire certificate chain for
 .. _messaging.pem: https://github.com/ibm-messaging/iot-python/blob/master/src/ibmiotf/messaging.pem
 
 .. tip:: Some SSL client libraries have been shown to not handle wildcarded
-    domains, in which case - if you can not change library - you will need to turn 
+    domains, in which case - if you cannot change libraries - you will need to turn 
     off certificate checking.
 
 .. note:: The Foundation only supports **TLS v1.2 with AES 128 ciphers**. Please ensure your 
@@ -111,7 +111,7 @@ Quality of service
 The MQTT protocol provides three qualities of service for delivering messages 
 between clients and servers: "at most once", "at least once" and "exactly once".
 Events and commands can be sent using any quality of service level, however you 
-should catrefully consider whether what the right level is for your needs.  It 
+should carefully consider whether what the right level is for your needs.  It 
 is not a simple case that QoS2 is "better" than QoS0.
 
 
