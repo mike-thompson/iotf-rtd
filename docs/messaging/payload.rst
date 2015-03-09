@@ -67,7 +67,7 @@ Timestamp
 ~~~~~~~~~
 
 The **ts** element allows you to associate a timestamp with the event
-(or command). This is an optional element, if included it's value should
+(or command). This is an optional element and if included its value should
 be a valid ISO8601 encoded timestamp string.
 
 .. code:: json
@@ -87,12 +87,12 @@ be a valid ISO8601 encoded timestamp string.
 
 Custom JSON payloads
 -------------------------------------------------------------------------------
-The IOT Foundation is designed to be open, you may send your event and command data in any 
+The IOT Foundation is designed to be open. You may send your event and command data in any 
 format you choose, however if you choose to send data in a custom format it will limit some 
 features of the service which can only function with a known payload format.
 
 Below are a number of example payloads that are close the to the IOTF specification, but 
-do not quite match it.  Each would be treated as a custom JSON payload.
+do not quite match it.  Each would be treated as a custom JSON payload:
 
 **Example 1**
 
