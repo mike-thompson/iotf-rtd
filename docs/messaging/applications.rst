@@ -2,7 +2,7 @@
 MQTT Connectivity for Applications
 ===============================================================================
 
-An Application must authenticate using a client ID in the following format
+An Application must authenticate using a client ID in the following format:
 
 	a:**org\_id**:**app_id**
 
@@ -67,7 +67,7 @@ An application may publish events as if they came from any registered device.
 
 Publishing device commands
 -------------------------------------------------------------------------------
-An application may publish command to any registered device.
+An application may publish commands to any registered device.
 
 -  Publish to topic iot-2/type/**device\_type**/id/**device\_id**/cmd/**command\_id**/fmt/**format\_string**
 
@@ -82,7 +82,7 @@ An application may subscribe to events from one or more devices.
 
 .. note:: The MQTT "any" wildcard character (+) may be used for any of the following 
     components if you want to subscribe to more than one type of event, or events 
-    from more than a single device.
+    from more than a single device:
 
     - device\_type
     - device\_id
@@ -101,7 +101,7 @@ An application may subscribe to commands being sent to one or more devices.
 
 .. note:: The MQTT "any" wildcard character (+) may be used for any of the following 
     components if you want to subscribe to more than one type of event, or events 
-    from more than a single device.
+    from more than a single device:
 
     - device\_type
     - device\_id
@@ -119,7 +119,7 @@ An application may subscribe to monitor status of one or more devices.
 -  Subscribe to topic iot-2/type/**device\_type**/id/**device\_id**/mon
 
 .. note:: The MQTT "any" wildcard character (+) may be used for any of the following 
-    components if you want to subscribe to updates more than one device.
+    components if you want to subscribe to updates from more than one device:
 
     - device\_type
     - device\_id
@@ -135,7 +135,7 @@ An application may subscribe to monitor status of one or more applications.
 -  Subscribe to topic iot-2/app/**app\_id**/mon
 
 .. note:: The MQTT "any" wildcard character (+) may be used for **app\_id** if you 
-    want to subscribe for updates for all applications
+    want to subscribe for updates for all applications.
 
 
 ----
@@ -150,7 +150,7 @@ registered service that are not supported in QuickStart:
 
 - Publishing commands
 - Subscribing to commands
-- Use of the MQTT "any" wildcard character (+) for the following topic components
+- Use of the MQTT "any" wildcard character (+) for the following topic components:
 
   - device\_type
   - app\_id
